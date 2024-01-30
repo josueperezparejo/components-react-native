@@ -1,8 +1,8 @@
 import { FlatList, Text, View } from "react-native"
-import { styles } from "../../theme/appTheme"
 import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { FlatListMenuItem } from "../components"
 import { menuItems } from "../data/menuItems"
+import { styles } from "../theme/appTheme"
 
 export const HomeScreen = () => {
 
