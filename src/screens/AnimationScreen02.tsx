@@ -1,5 +1,6 @@
 import { Animated, PanResponder, StyleSheet, View } from 'react-native'
 import { useRef } from 'react';
+import { HeaderTitle } from '../components';
 
 export const AnimationScreen02 = () => {
 
@@ -25,11 +26,15 @@ export const AnimationScreen02 = () => {
 
 
   return (
-    <View style={styles.container}>
-      <Animated.View
-        {...panResponder.panHandlers}
-        style={[pan.getLayout(), styles.redBox]}
-      />
+    <View style={{marginHorizontal: 20, flex: 1}}>
+      <HeaderTitle title='Animation 02' />
+
+      <View style={styles.container}>
+        <Animated.View
+          {...panResponder.panHandlers}
+          style={[pan.getLayout(), styles.redBox]}
+        />
+      </View>
     </View>
   )
 }
