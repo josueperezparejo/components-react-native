@@ -2,21 +2,15 @@ import { Keyboard, KeyboardAvoidingView, Platform, ScrollView, StyleSheet, TextI
 import { styles } from "../theme/appTheme"
 import { HeaderTitle } from "../components"
 import { useState } from "react"
+import { useForm } from "../hooks"
 
 export const TextInputsScreen = () => {
 
-    const [form, setForm] = useState({
+    const { form, onChange } = useForm({
         name: '',
         email: '',
         phone: ''
     })
-
-    const onChange = (value: string, field: string) => {
-        setForm({
-            ...form,
-            [field]: value
-        })
-    }
 
     return (
         <KeyboardAvoidingView
