@@ -31,4 +31,9 @@ export const menuItems:MenuItem[] = [
       icon: 'refresh',
       component: 'PullToRefresh'
     },
+    {
+      name: 'SectionListScreen',
+      icon: 'format-list-bulleted',
+      component: 'SectionListScreen'
+    },
   ]
