@@ -26,4 +26,9 @@ export const menuItems:MenuItem[] = [
       icon: 'edit',
       component: 'TextInputsScreen'
     },
+    {
+      name: 'PullToRefresh',
+      icon: 'refresh',
+      component: 'PullToRefresh'
+    },
   ]
