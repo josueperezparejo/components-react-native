@@ -21,4 +21,9 @@ export const menuItems:MenuItem[] = [
       icon: 'notifications',
       component: 'AlertScreen'
     },
+    {
+      name: 'TextInputs',
+      icon: 'edit',
+      component: 'TextInputsScreen'
+    },
   ]
