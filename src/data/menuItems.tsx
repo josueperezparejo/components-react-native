@@ -16,4 +16,9 @@ export const menuItems:MenuItem[] = [
       icon: 'toggle-on',
       component: 'SwitchScreen'
     },
+    {
+      name: 'Alert',
+      icon: 'notifications',
+      component: 'AlertScreen'
+    },
   ]

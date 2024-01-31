@@ -1,6 +1,12 @@
 import React from 'react'
 import { createStackNavigator } from "@react-navigation/stack"
-import { HomeScreen, AnimationScreen01, AnimationScreen02, SwitchScreen } from '../screens'
+import {
+    HomeScreen,
+    AnimationScreen01,
+    AnimationScreen02,
+    SwitchScreen,
+    AlertScreen
+} from '../screens'
 
 
 export const StackNavigation = () => {
@@ -17,6 +23,7 @@ export const StackNavigation = () => {
             <Stack.Screen name="AnimationScreen01" component={AnimationScreen01} />
             <Stack.Screen name="AnimationScreen02" component={AnimationScreen02} />
             <Stack.Screen name="SwitchScreen" component={SwitchScreen} />
+            <Stack.Screen name="AlertScreen" component={AlertScreen} />
         </Stack.Navigator>
     )
 }
