@@ -41,4 +41,9 @@ export const menuItems:MenuItem[] = [
       icon: 'content-copy',
       component: 'ModalScreen'
     },
+    {
+      name: 'InfiniteScrollScreen',
+      icon: 'mouse',
+      component: 'InfiniteScrollScreen'
+    },
   ]
