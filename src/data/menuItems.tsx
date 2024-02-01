@@ -42,8 +42,13 @@ export const menuItems:MenuItem[] = [
       component: 'ModalScreen'
     },
     {
-      name: 'InfiniteScrollScreen',
+      name: 'InfiniteScrollScreen01',
       icon: 'mouse',
-      component: 'InfiniteScrollScreen'
+      component: 'InfiniteScrollScreen01'
+    },
+    {
+      name: 'InfiniteScrollScreen02',
+      icon: 'cached',
+      component: 'InfiniteScrollScreen02'
     },
   ]

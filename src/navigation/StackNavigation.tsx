@@ -9,9 +9,10 @@ import {
     TextInputsScreen,
     PullToRefresh,
     SectionListScreen,
-    ModalScreen
+    ModalScreen,
+    InfiniteScrollScreen01,
+    InfiniteScrollScreen02
 } from '../screens'
-import { InfiniteScrollScreen } from '../screens/InfiniteScrollScreen'
 
 
 export const StackNavigation = () => {
@@ -33,7 +34,8 @@ export const StackNavigation = () => {
             <Stack.Screen name="PullToRefresh" component={PullToRefresh} />
             <Stack.Screen name="SectionListScreen" component={SectionListScreen} />
             <Stack.Screen name="ModalScreen" component={ModalScreen} />
-            <Stack.Screen name="InfiniteScrollScreen" component={InfiniteScrollScreen} />
+            <Stack.Screen name="InfiniteScrollScreen01" component={InfiniteScrollScreen01} />
+            <Stack.Screen name="InfiniteScrollScreen02" component={InfiniteScrollScreen02} />
         </Stack.Navigator>
     )
 }
