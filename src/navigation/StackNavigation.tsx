@@ -8,7 +8,8 @@ import {
     AlertScreen,
     TextInputsScreen,
     PullToRefresh,
-    SectionListScreen
+    SectionListScreen,
+    ModalScreen
 } from '../screens'
 
 
@@ -30,6 +31,7 @@ export const StackNavigation = () => {
             <Stack.Screen name="TextInputsScreen" component={TextInputsScreen} />
             <Stack.Screen name="PullToRefresh" component={PullToRefresh} />
             <Stack.Screen name="SectionListScreen" component={SectionListScreen} />
+            <Stack.Screen name="ModalScreen" component={ModalScreen} />
         </Stack.Navigator>
     )
 }

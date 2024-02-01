@@ -36,4 +36,9 @@ export const menuItems:MenuItem[] = [
       icon: 'format-list-bulleted',
       component: 'SectionListScreen'
     },
+    {
+      name: 'ModalScreen',
+      icon: 'content-copy',
+      component: 'ModalScreen'
+    },
   ]
