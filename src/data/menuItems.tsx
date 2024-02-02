@@ -51,4 +51,9 @@ export const menuItems:MenuItem[] = [
       icon: 'cached',
       component: 'InfiniteScrollScreen02'
     },
+    {
+      name: 'Slides',
+      icon: 'local-florist',
+      component: 'SlidesScreen'
+    },
   ]

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { FlatList } from 'react-native-gesture-handler'
 import { StyleSheet } from 'react-native'
 import { Image } from 'react-native'
+import { styles } from '../theme/appTheme'
 
 export const InfiniteScrollScreen02 = () => {
 
@@ -30,7 +31,13 @@ export const InfiniteScrollScreen02 = () => {
             data={numbers}
             keyExtractor={(item) => item.toString()}
             renderItem={({item}) => renderItem(item)}
-            ListHeaderComponent={<HeaderTitle title='Inifite Scroll' />}
+            ListHeaderComponent={() => {
+                return (
+                    <View style={styles.globalMargin}>
+                        <HeaderTitle title='Inifite Scroll' />
+                    </View>
+                )
+            }}
             onEndReached={() => {
                 console.log("Cargando mas contenido")
                 loadMore()
@@ -40,12 +47,3 @@ export const InfiniteScrollScreen02 = () => {
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-    textItem: {
-        height: 200,
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontSize: 24
-    }
-});
