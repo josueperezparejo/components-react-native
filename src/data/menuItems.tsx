@@ -56,4 +56,9 @@ export const menuItems:MenuItem[] = [
       icon: 'local-florist',
       component: 'SlidesScreen'
     },
+    {
+      name: 'Themes',
+      icon: 'dark-mode',
+      component: 'ChangeThemeScreen'
+    },
   ]

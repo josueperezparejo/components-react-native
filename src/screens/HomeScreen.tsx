@@ -5,7 +5,6 @@ import { styles } from "../theme/appTheme"
 
 export const HomeScreen = () => {
 
-
   const itemSeparator = () => {
     return <View style={{borderBottomWidth: 1, opacity: 1.4, marginVertical: 5}} />
   }

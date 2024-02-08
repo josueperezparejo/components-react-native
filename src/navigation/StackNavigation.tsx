@@ -12,9 +12,9 @@ import {
     ModalScreen,
     InfiniteScrollScreen01,
     InfiniteScrollScreen02,
-    SlidesScreen
+    SlidesScreen,
+    ChangeThemeScreen
 } from '../screens'
-
 
 export const StackNavigation = () => {
 
@@ -38,6 +38,7 @@ export const StackNavigation = () => {
             <Stack.Screen name="InfiniteScrollScreen01" component={InfiniteScrollScreen01} />
             <Stack.Screen name="InfiniteScrollScreen02" component={InfiniteScrollScreen02} />
             <Stack.Screen name="SlidesScreen" component={SlidesScreen} />
+            <Stack.Screen name="ChangeThemeScreen" component={ChangeThemeScreen} />
         </Stack.Navigator>
     )
 }
